@@ -1,0 +1,55 @@
+.root {
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.input {
+  all: unset;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  margin: 1rem;
+  text-align: left;
+}
+.button {
+  all: unset;
+  background: lightgray;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  &:hover {
+    background: lighten(lightgray, 5%);
+    cursor: pointer;
+  }
+}
+.list {
+  all: unset;
+}
+.listItem {
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  background: lighten(lightgray, 5%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &.itemDone {
+    background: lighten(lightgray, 10%);
+    color: gray;
+  }
+  .removeButton {
+    all: unset;
+    margin-left: auto;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    &:hover {
+      background: lightgray;
+    }
+  }
+  .itemIcon {
+    width: 30px;
+    font-size: 1.2rem;
+  }
+}
